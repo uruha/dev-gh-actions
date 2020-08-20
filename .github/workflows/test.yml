@@ -12,7 +12,7 @@ jobs:
       - run: npm install
       - run: ./node_modules/.bin/tsc -p .
       - name: Hello world action step
-        uses: ./dist
+        uses: ./
         with:
           who-to-greet: 'Nyan Nyan'
       # Use the output from the `hello` step
